@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Consultar CEP</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="formulario">
+            <h1>Consultar CEP</h1>
+            <div class="radio-btn">
+               <input type="radio" name="metodo" id="ajax" value="1" checked />
+               <label for="ajax">AJAX</label>
+
+               <input type="radio" name="metodo" id="fetch" value="2" />
+               <label for="fetch">Fetch API</label>
+
+               <input type="radio" name="metodo" id="async" value="3" />
+               <label for="async">Async/Await</label>
+            </div>
+
+            <input
+               type="text"
+               name="cep"
+               id="cep"
+               placeholder="Digite seu CEP"
+            />
+
+            <button type="button" onclick="verificar()">Pesquisar CEP</button>
+            <br />
+
+            <input type="text" id="logradouro" placeholder="Logradouro" />
+            <input type="text" id="complemento" placeholder="Complemento" />
+            <input type="text" id="bairro" placeholder="Bairro" />
+            <input type="text" id="localidade" placeholder="Cidade" />
+            <input type="text" id="uf" placeholder="UF" />
+         </div>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
