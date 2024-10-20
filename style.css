@@ -5,22 +5,27 @@
    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+   background-color: #64748b;
+}
+
 .container {
    display: flex;
    justify-content: center;
+   flex-direction: column;
    align-items: center;
    height: 100vh;
    width: 100%;
-   background-color: rgb(100 116 139);
 }
 
-.formulario {
+.formulario,
+.list {
    display: flex;
    flex-direction: column;
    gap: 10px;
    max-width: 450px;
    width: 100%;
-   background-color: rgb(148 163 184);
+   background-color: #94a3b8;
    padding: 30px;
    border-radius: 10px;
    color: white;
@@ -56,4 +61,40 @@
    & input {
       margin-left: 15px;
    }
+}
+
+.voltar {
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   background: none;
+   border: none;
+
+   & img {
+      width: 30px;
+   }
+}
+
+.voltar:hover {
+   cursor: pointer;
+   opacity: 0.3;
+}
+
+.list h1 {
+   padding-bottom: 50px;
+}
+
+a {
+   text-decoration: none;
+}
+
+.item-list {
+   background-color: #64748b;
+   padding: 15px;
+   border-radius: 5px;
+   color: white;
+}
+
+.item-list:hover {
+   opacity: 0.5;
 }
